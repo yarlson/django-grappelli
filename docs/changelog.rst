@@ -8,8 +8,31 @@
 Changelog
 =========
 
-2.5.2 (not yet released)
+2.5.4 (not yet released)
 ------------------------
+
+2.5.3 (April 13th, 2014)
+------------------------
+
+* New: Changing the sort order manually for inlines.
+* Fixed: Floating properties of form in change-form.
+* Fixed: Keyboard navigation with autocompletes.
+* Improved: Lookup pattern with autocomplete js.
+* Improved: Handle DoesNotExist error with switch_user_dropdown.
+* Removed: Sourcemap from jquery.min.js
+
+2.5.2 (February 20th, 2014)
+---------------------------
+
+* Fixed: Exception chain with autocompletes.
+* Fixed: Reindexing with inline sortables.
+* Fixed: Fixed duplicate with search form.
+* Fixed: Removed onclick_attribs in submit line.
+* Improved: Added note about the location of customdashboard (docs).
+* Improved: Load cycle from future.
+* Improved: TinyMCE dialog layout.
+* Improved: Added input type email to grid system.
+* Improved: Compatibility with adminplus.
 
 2.5.1 (December 18th, 2013)
 ---------------------------

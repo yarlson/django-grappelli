@@ -1,6 +1,6 @@
 .. |grappelli| replace:: Grappelli
 .. |filebrowser| replace:: FileBrowser
-.. |grappelliversion| replace:: 2.5.1
+.. |grappelliversion| replace:: 2.5.4
 
 .. _quickstart:
 
@@ -14,7 +14,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install django-grappelli==2.5.1
+    $ pip install django-grappelli
 
 Go to https://github.com/sehmaschine/django-grappelli if you need to download a package or clone/fork the repository.
 
@@ -48,7 +48,7 @@ Make sure ``AppDirectoriesFinder`` is first with your ``STATICFILES_FINDERS``:
         'django.contrib.staticfiles.finders.FileSystemFinder',
     )
 
-Add the request context processor (needed for the Dasbhaord and the Switch User feature):
+Add the request context processor (needed for the Dashboard and the Switch User feature):
 
 .. code-block:: python
 

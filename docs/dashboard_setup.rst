@@ -9,7 +9,7 @@ Dashboard Setup
 With the Django admin interface, the admin index page reflects the structure of your applications/models. With ``grappelli.dashboard`` you are able to change that structure and rearrange (or group) apps and models.
 
 .. note::
-    ``grappelli.dashboard`` is a simplified version of `Django Admin Tools <http://packages.python.org/django-admin-tools/>`_: Bookmarks, Menus and the custom App Index are **not available with Grappelli**.
+    ``grappelli.dashboard`` is a simplified version of `Django Admin Tools <http://django-admin-tools.readthedocs.org/>`_: Bookmarks, Menus and the custom App Index are **not available with Grappelli**.
 
 Open ``settings.py`` and add ``grappelli.dashboard`` to your ``INSTALLED_APPS`` (before ``grappelli``). Check if the request context processor is being used:
 
@@ -32,12 +32,13 @@ Open ``settings.py`` and add ``grappelli.dashboard`` to your ``INSTALLED_APPS`` 
 Custom dashboard
 ----------------
 
-To customize the index dashboard, you first need to add a custom dashboard:
+To customize the index dashboard, you first need to add a custom dashboard, located within your project directory. Depending on the location of manage.py, you might need to add the project directory to the management command (see last example below):
 
 .. code-block:: bash
     
     $ python manage.py customdashboard  # creates dashboard.py
     $ python manage.py customdashboard somefile.py  # creates somefile.py
+    $ python manage.py customdashboard projdir/somefile.py  # creates somefile.py in projdir
 
 The created file contains the class ``CustomIndexDashboard`` that corresponds to the admin index page dashboard. Now you need to add your custom dashboard. Open your ``settings.py`` file and define ``GRAPPELLI_INDEX_DASHBOARD``:
 
